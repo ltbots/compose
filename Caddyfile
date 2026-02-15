@@ -1,6 +1,8 @@
 :80 {
   handle_path /tg/* {
-    redir https://api.telegram.org{path} 302
+    reverse_proxy https://api.telegram.org {
+      header_up Host api.telegram.org
+    }
   }
 
   handle /api/* {
