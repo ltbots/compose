@@ -3,4 +3,4 @@ commit:
 
 readme:
 	sh ./scripts/readme.sh README.md compose.yaml yaml
-	sh ./scripts/readme.sh README.md Caddyfile yaml
+	sh ./scripts/readme.sh README.md Caddyfile caddyfile

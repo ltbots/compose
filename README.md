@@ -18,7 +18,7 @@ Caddy routing:
 - everything else → `frontend:8080`
 
 ## Example configs
-Compose:
+compose.yaml:
 <!-- BEGIN:compose.yaml -->
 ```yaml
 services:
@@ -51,9 +51,9 @@ services:
 ```
 <!-- END:compose.yaml -->
 
-Candy:
+Caddyfile:
 <!-- BEGIN:Caddyfile -->
-```yaml
+```caddyfile
 :80 {
   handle_path /tg/* {
     reverse_proxy https://api.telegram.org {
